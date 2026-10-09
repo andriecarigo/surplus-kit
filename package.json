@@ -1,0 +1,33 @@
+{
+  "name": "surplus-kit",
+  "version": "0.1.0",
+  "description": "Tiny, dependency-free toolkit for apps that sell end-of-day surplus food: markdown pricing, pickup windows and mystery-bag bundling.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc -p tsconfig.test.json && node --test dist-test/test/",
+    "example": "tsc -p tsconfig.test.json && node dist-test/examples/basic.js"
+  },
+  "keywords": [
+    "food-waste",
+    "surplus",
+    "markdown",
+    "pricing",
+    "pickup",
+    "too-good-to-go",
+    "sustainability"
+  ],
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.11.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
